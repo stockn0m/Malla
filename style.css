@@ -1,0 +1,33 @@
+.ramo {
+  display: inline-block;
+  background: white; /* base blanco */
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin: 7px;
+  cursor: pointer;
+  border: 2px solid #ff9a9a; /* borde coral claro */
+  transition: background-color 0.3s, border-color 0.3s;
+  user-select: none;
+  color: #4a4a4a;
+}
+
+.ramo.aprobado {
+  background-color: #ff7f7f; /* rosa fuerte */
+  border-color: #e05858;
+  color: white;
+}
+
+.ramo.disponible {
+  background-color: rgba(255, 154, 154, 0.3); /* rosa claro transparente */
+  border-color: rgba(255, 154, 154, 0.5);
+  color: #a85a5a;
+  cursor: pointer;
+}
+
+.ramo.no-disponible {
+  background-color: white; /* igual que base */
+  border-color: #ddd; /* borde gris clarito */
+  color: #bbb;
+  cursor: default;
+  pointer-events: none;
+}
